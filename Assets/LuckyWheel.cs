@@ -29,6 +29,7 @@ public class LuckyWheel : MonoBehaviour
             for (int i = 0; i < 10000; i++)
             {
                 int index = getRandomPrize();
+                Debug.Log("WIN : " + prizes[index].name + " | Index = " + index);
             }
         }
     }
@@ -90,7 +91,6 @@ public class LuckyWheel : MonoBehaviour
         {
             return getRandomPrize();
         }
-        Debug.Log("Sector id win: " + randomSector + ". Name: " + prizes[randomSector].name);
         return randomSector;
     }
 
