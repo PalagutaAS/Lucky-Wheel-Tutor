@@ -96,7 +96,7 @@ public class LuckyWheel : MonoBehaviour
 
     private void setRandomOptions()
     {
-        rotationSpeed = Random.Range(250,1000);
+        rotationSpeed = Random.Range(250, 1000);
         rotationTimeMaxSpeed = Random.Range(0, 1.2f);
         accelerationTime = Random.Range(0, 4f);
         numberOfSpins = Random.Range(2, 6);
