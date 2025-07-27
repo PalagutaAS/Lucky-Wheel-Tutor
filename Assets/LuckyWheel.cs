@@ -23,15 +23,15 @@ public class LuckyWheel : MonoBehaviour
         {
             StartCoroutine(SpinWheel());
         }
-
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            for (int i = 0; i < 10000; i++)
-            {
-                int index = getRandomPrize();
-                Debug.Log("WIN : " + prizes[index].name + " | Index = " + index);
-            }
-        }
+        // Нажав на X можно проверить как распределяются веса для выигрыша
+        //if (Input.GetKeyDown(KeyCode.X))
+        //{
+        //    for (int i = 0; i < 10000; i++)
+        //    {
+        //        int index = getRandomPrize();
+        //        Debug.Log("WIN : " + prizes[index].name + " | Index = " + index);
+        //    }
+        //}
     }
 
     IEnumerator SpinWheel() 
